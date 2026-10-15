@@ -1,0 +1,18 @@
+# Storage stations of the twelve-day study on the IEEE 118-bus system.
+# All parameters apply to each station. Intervals are five minutes long.
+stations:
+  - id: BESS26
+    bus: 26
+  - id: BESS80
+    bus: 80
+power_rating_mw: 775                # charge and discharge
+converter_rating_mva: 775
+energy_capacity_mwh: 6200
+energy_floor_fraction: 0.10         # of the energy capacity
+charge_efficiency: 0.95
+discharge_efficiency: 0.95
+ffr_max_mw: 150                     # fast frequency response (FFR)
+ffr_hold_min: 15                    # duration for which the FFR award must be sustainable
+ffr_time_constant_s: 0.1
+ffr_offer_usd_per_mwh: 10
+degradation_cost_usd_per_mwh: 10    # on charge and discharge throughput
