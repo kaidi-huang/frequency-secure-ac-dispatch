@@ -24,7 +24,13 @@ ieee118/
     sg_dynamic_parameters.csv            SG dynamic parameters
     ibr_capability.csv                   IBR derating envelope
     contingencies.csv                    contingency family
-ieee300/                                 the IEEE 300-bus files, named as above
+ieee300/
+    pglib_opf_case300_ieee.m             network
+    synchronous_generators.csv           synchronous generators
+    inverter_based_resources.csv         IBRs
+    penetration_levels.csv               IBR penetration levels
+    sg_dynamic_parameters.csv            SG dynamic parameters
+    contingencies.csv                    contingency family
 storage_study/
     inverter_based_resources_51pct.csv   IBRs online at 51 % penetration
     storage.yaml                         storage stations
@@ -81,7 +87,7 @@ The IBRs at one bus form one plant.
 
 The IBR penetration is the share of the IBRs in the online nameplate
 active-power capacity. `penetration_levels.csv` lists the levels
-(`penetration_level_pct`), their exact values (`actual_pct`), and the
+(`penetration_level_pct`), their values to one decimal (`actual_pct`), and the
 installed IBR capacity (`cumulative_ibr_mw`):
 
 - IEEE 118: 34, 70, and 97 %
