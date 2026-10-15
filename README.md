@@ -2,8 +2,8 @@
 
 This repository accompanies the paper
 
-> "Nodal frequency-secure real-time dispatch of inverter-dominated power
-> systems with learned constraints monotone in activatable reserve."
+> "Nodal Frequency-Secure Real-Time Dispatch of Inverter-Dominated Power
+> Systems With Learned Constraints Monotone in Activatable Reserve"
 
 It holds the Supplementary Material of the paper and the data of its test
 systems: the IEEE 118-bus and IEEE 300-bus systems with part of the
@@ -114,9 +114,10 @@ one contingency per row: `penetration_level`, `contingency_id`, `bus`, and
 
 ## IBR derating envelope
 
-On segment `seg_id` of `ibr_capability.csv`, for a squared bus voltage `W`
-(p.u.) between `w_low` and `w_high`, the derating factor `t` of an IBR
-satisfies `t <= a_coeff * W + b_coeff`, with `0.05 <= t <= 1`.
+At a squared bus voltage `W` (p.u.), the derating factor `t` of an IBR
+satisfies `t <= a_coeff * W + b_coeff` on every segment `seg_id` of
+`ibr_capability.csv`, with `0.05 <= t <= 1`. Each segment is the line
+through the envelope values at `w_low` and `w_high`.
 
 ## Storage study
 
